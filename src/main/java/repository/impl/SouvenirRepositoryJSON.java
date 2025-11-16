@@ -1,4 +1,4 @@
-package repository;
+package repository.impl;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 import model.Manufacture;
 import model.Souvenir;
+import repository.SouvenirRepository;
 
 
 import java.io.File;

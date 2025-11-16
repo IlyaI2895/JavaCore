@@ -1,12 +1,12 @@
-package repository;
+package repository.impl;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 import model.Manufacture;
 import model.Souvenir;
+import repository.ManufactureRepository;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,10 +15,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class ManufactureRepositoryImpl implements ManufactureRepository {
     private final String DATA = "src\\main\\resources\\manufacture.json";
     private final SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+
+
+    private static List<Manufacture> initRepository() {
+        SouvenirRepositoryJSON repo = new SouvenirRepositoryJSON();
+        List<Manufacture> library = repo
+                .getSouvenirs().stream().map(souvenir -> souvenir.getManufacturer())
+                .collect(Collectors.toList());
+        return library;
+    }
 
 
     @Override
@@ -29,7 +39,7 @@ public class ManufactureRepositoryImpl implements ManufactureRepository {
                     new TypeReference<>() {
                     });
         } catch (IOException e) {
-            rewriteData(Collections.emptyList());
+            rewriteData(initRepository());
         }
         return manufactures;
     }

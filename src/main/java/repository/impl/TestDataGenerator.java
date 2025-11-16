@@ -1,4 +1,4 @@
-package repository;
+package repository.impl;
 
 import model.Manufacture;
 import model.Souvenir;
@@ -66,7 +66,6 @@ public class TestDataGenerator {
                     .build();
 
         } return new ArrayList<>(Arrays.asList(souvenir));
-
 
     }
 }
