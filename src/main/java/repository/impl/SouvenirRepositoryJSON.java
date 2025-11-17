@@ -31,10 +31,6 @@ public class SouvenirRepositoryJSON implements SouvenirRepository {
         rewriteData(collect);
     }
 
-    private void updateData() {
-        rewriteData(initRepository());
-    }
-
     private static List<Souvenir> initRepository() {
         List<Souvenir> souvenir = TestDataGenerator.generateRandomSouvenir(50);
         List<Souvenir> localLibrary = new ArrayList<>(souvenir);
@@ -49,18 +45,20 @@ public class SouvenirRepositoryJSON implements SouvenirRepository {
                     new TypeReference<>() {
                     });
         } catch (IOException e) {
-            updateData();
+            rewriteData(initRepository());
+
             throw new RuntimeException(e);
 
         }
     }
 
     @Override
-    public void getSouvenirsByManufacture(String manufacture) {
-        getSouvenirs().stream()
-                .filter(souvenir -> souvenir.getManufacturer().getFirstName().equalsIgnoreCase(manufacture) ||
-                        souvenir.getManufacturer().getSurname().equalsIgnoreCase(manufacture))
-                .forEach(System.out::println);
+    public List<Souvenir> getSouvenirsByManufacture(String manufacture) {
+        List<Souvenir> collect = getSouvenirs().stream()
+                .filter(souvenir -> manufacture.equalsIgnoreCase(souvenir.getManufacturer().getSurname())
+                        || manufacture.equalsIgnoreCase(souvenir.getManufacturer().getFirstName()))
+                .collect(Collectors.toList());
+        return collect;
     }
 
     @Override
@@ -79,32 +77,31 @@ public class SouvenirRepositoryJSON implements SouvenirRepository {
 
 
     @Override
-    public void getSouvenirByCountry(String country) {
-        getSouvenirs().stream().filter(souvenir -> souvenir.getManufacturer().getCountry().equalsIgnoreCase(country))
-                .forEach(System.out::println);
-
+    public List<Souvenir> getSouvenirByCountry(String country) {
+        List<Souvenir> collect = getSouvenirs().stream()
+                .filter(souvenir -> souvenir.getManufacturer().getCountry().equalsIgnoreCase(country))
+                .collect(Collectors.toList());
+        return collect;
     }
 
     @Override
-    public void manufacturedFromSouvenirsPrice(int price) {
-        getSouvenirs().stream().filter(souvenir -> souvenir.getPrice() < price)
+    public List<Manufacture> manufacturedFromSouvenirsPrice(int price) {
+        List<Manufacture> collect = getSouvenirs().stream().filter(souvenir -> souvenir.getPrice() < price)
                 .map(Souvenir::getManufacturer)
-                .forEach(System.out::println);
+                .collect(Collectors.toList());
+        return collect;
+
 
     }
 
     @Override
-    public void getManufactureFromYearsProduct(String name, int year) {
-        try {
-            getSouvenirs().stream().filter(souvenir -> name.equalsIgnoreCase(souvenir.getName())
+    public List<Souvenir> getManufactureFromYearsProduct(String name, int year) {
+            List<Souvenir> collect = getSouvenirs().stream().filter(souvenir -> name.equalsIgnoreCase(souvenir.getName())
                             || souvenir.getDate() == year)
-                    .forEach(System.out::println);
-        } catch (RuntimeException e) {
-            System.out.println("Такого сувенира не существует");
-        }
-
-
+                    .collect(Collectors.toList());
+            return collect;
     }
+
 
     private ObjectMapper newMapper() {
         final ObjectMapper mapper = new ObjectMapper();
