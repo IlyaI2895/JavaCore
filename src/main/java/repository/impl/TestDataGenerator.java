@@ -44,8 +44,8 @@ public class TestDataGenerator {
 
         Manufacture[] manufactures = Arrays.stream(manufacture)
                 .map(s -> Manufacture.builder()
-                        .firstName(s.split(" ")[0])
-                        .surname(s.split(" ")[1])
+                        .firstName(s.split(" ")[1])
+                        .surname(s.split(" ")[0])
                         .country(country[rand.nextInt(country.length)])
                         .age(rand.nextInt(61 - 18 + 1) + 18)
                         .build())
@@ -55,7 +55,7 @@ public class TestDataGenerator {
         for (int i = 0; i < count; i++) {
             String names = name[rand.nextInt(name.length)] + " " + (rand.nextInt(5) + 1);
             Manufacture manufacture1 = manufactures[rand.nextInt(manufactures.length)];
-            int price = rand.nextInt((173) * 1000);
+            int price = rand.nextInt((173) *10);
             int date = 1900 + rand.nextInt(125);
 
                     souvenir[i] = Souvenir.builder()

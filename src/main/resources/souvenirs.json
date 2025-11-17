@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "name": "StreetSign 3",
+    "manufacturer": {
+      "manufactureID": 11,
+      "surname": "Michael",
+      "firstName": "Brown",
+      "age": 36,
+      "country": "Norway"
+    },
+    "price": 832.0,
+    "date": 2020
+  },
+  {
+    "id": 2,
+    "name": "Calendar 4",
+    "manufacturer": {
+      "manufactureID": 39,
+      "surname": "Daniel",
+      "firstName": "Jackson",
+      "age": 49,
+      "country": "Brazil"
+    },
+    "price": 770.0,
+    "date": 1946
+  },
+  {
+    "id": 3,
+    "name": "ArtCalendar 4",
+    "manufacturer": {
+      "manufactureID": 35,
+      "surname": "Emily",
+      "firstName": "Johnson",
+      "age": 48,
+      "country": "France"
+    },
+    "price": 0.0,
+    "date": 2000
+  },
+  {
+    "id": 4,
+    "name": "GreetingCard 1",
+    "manufacturer": {
+      "manufactureID": 9,
+      "surname": "Hannah",
+      "firstName": "Campbell",
+      "age": 61,
+      "country": "Brazil"
+    },
+    "price": 170.0,
+    "date": 1961
+  },
+  {
+    "id": 5,
+    "name": "CrystalBall 1",
+    "manufacturer": {
+      "manufactureID": 5,
+      "surname": "Grace",
+      "firstName": "Martin",
+      "age": 58,
+      "country": "Norway"
+    },
+    "price": 1488.0,
+    "date": 1985
+  },
+  {
+    "id": 6,
+    "name": "Keyring 2",
+    "manufacturer": {
+      "manufactureID": 30,
+      "surname": "Henry",
+      "firstName": "King",
+      "age": 38,
+      "country": "Germany"
+    },
+    "price": 1079.0,
+    "date": 1940
+  },
+  {
+    "id": 7,
+    "name": "MiniPuzzle 5",
+    "manufacturer": {
+      "manufactureID": 43,
+      "surname": "Joseph",
+      "firstName": "Lewis",
+      "age": 44,
+      "country": "China"
+    },
+    "price": 496.0,
+    "date": 2007
+  },
+  {
+    "id": 8,
+    "name": "KeyBottleOpener 3",
+    "manufacturer": {
+      "manufactureID": 8,
+      "surname": "Ella",
+      "firstName": "Adams",
+      "age": 50,
+      "country": "Italy"
+    },
+    "price": 467.0,
+    "date": 1904
+  },
+  {
+    "id": 9,
+    "name": "TotePouch 2",
+    "manufacturer": {
+      "manufactureID": 9,
+      "surname": "Hannah",
+      "firstName": "Campbell",
+      "age": 61,
+      "country": "Brazil"
+    },
+    "price": 394.0,
+    "date": 2020
+  },
+  {
+    "id": 10,
+    "name": "FoldingFan 4",
+    "manufacturer": {
+      "manufactureID": 45,
+      "surname": "Charles",
+      "firstName": "Hall",
+      "age": 44,
+      "country": "Norway"
+    },
+    "price": 682.0,
+    "date": 2002
+  },
+  {
+    "id": 11,
+    "name": "PlushToy 3",
+    "manufacturer": {
+      "manufactureID": 11,
+      "surname": "Michael",
+      "firstName": "Brown",
+      "age": 36,
+      "country": "Norway"
+    },
+    "price": 725.0,
+    "date": 1969
+  },
+  {
+    "id": 12,
+    "name": "Socks 5",
+    "manufacturer": {
+      "manufactureID": 40,
+      "surname": "Lily",
+      "firstName": "Scott",
+      "age": 31,
+      "country": "Netherlands"
+    },
+    "price": 1469.0,
+    "date": 1968
+  },
+  {
+    "id": 13,
+    "name": "MousePad 2",
+    "manufacturer": {
+      "manufactureID": 50,
+      "surname": "David",
+      "firstName": "Wilson",
+      "age": 41,
+      "country": "Canada"
+    },
+    "price": 56.0,
+    "date": 1924
+  },
+  {
+    "id": 14,
+    "name": "PlushToy 3",
+    "manufacturer": {
+      "manufactureID": 29,
+      "surname": "Andrew",
+      "firstName": "Baker",
+      "age": 26,
+      "country": "Spain"
+    },
+    "price": 673.0,
+    "date": 1930
+  },
+  {
+    "id": 15,
+    "name": "MiniEasel 1",
+    "manufacturer": {
+      "manufactureID": 43,
+      "surname": "Joseph",
+      "firstName": "Lewis",
+      "age": 44,
+      "country": "China"
+    },
+    "price": 507.0,
+    "date": 1935
+  },
+  {
+    "id": 16,
+    "name": "CrystalBall 2",
+    "manufacturer": {
+      "manufactureID": 44,
+      "surname": "John",
+      "firstName": "Carter",
+      "age": 52,
+      "country": "Netherlands"
+    },
+    "price": 1035.0,
+    "date": 1909
+  },
+  {
+    "id": 17,
+    "name": "CityPin 4",
+    "manufacturer": {
+      "manufactureID": 17,
+      "surname": "Laura",
+      "firstName": "Davis",
+      "age": 48,
+      "country": "Mexico"
+    },
+    "price": 588.0,
+    "date": 1985
+  },
+  {
+    "id": 18,
+    "name": "Notebook 4",
+    "manufacturer": {
+      "manufactureID": 34,
+      "surname": "Olivia",
+      "firstName": "Taylor",
+      "age": 60,
+      "country": "Germany"
+    },
+    "price": 1727.0,
+    "date": 1996
+  },
+  {
+    "id": 19,
+    "name": "Cap 5",
+    "manufacturer": {
+      "manufactureID": 23,
+      "surname": "Chloe",
+      "firstName": "Nelson",
+      "age": 46,
+      "country": "Switzerland"
+    },
+    "price": 1257.0,
+    "date": 2008
+  },
+  {
+    "id": 20,
+    "name": "Bell 5",
+    "manufacturer": {
+      "manufactureID": 48,
+      "surname": "Mia",
+      "firstName": "Allen",
+      "age": 19,
+      "country": "Norway"
+    },
+    "price": 315.0,
+    "date": 1929
+  },
+  {
+    "id": 21,
+    "name": "ToteBag 2",
+    "manufacturer": {
+      "manufactureID": 27,
+      "surname": "Sophia",
+      "firstName": "Moore",
+      "age": 39,
+      "country": "Spain"
+    },
+    "price": 209.0,
+    "date": 1981
+  },
+  {
+    "id": 22,
+    "name": "CityPin 2",
+    "manufacturer": {
+      "manufactureID": 48,
+      "surname": "Mia",
+      "firstName": "Allen",
+      "age": 19,
+      "country": "Norway"
+    },
+    "price": 249.0,
+    "date": 1947
+  },
+  {
+    "id": 23,
+    "name": "TravelJournal 1",
+    "manufacturer": {
+      "manufactureID": 23,
+      "surname": "Chloe",
+      "firstName": "Nelson",
+      "age": 46,
+      "country": "Switzerland"
+    },
+    "price": 1207.0,
+    "date": 1935
+  },
+  {
+    "id": 24,
+    "name": "CrystalBall 4",
+    "manufacturer": {
+      "manufactureID": 24,
+      "surname": "Sarah",
+      "firstName": "Miller",
+      "age": 35,
+      "country": "France"
+    },
+    "price": 260.0,
+    "date": 2024
+  },
+  {
+    "id": 25,
+    "name": "BeerMug 5",
+    "manufacturer": {
+      "manufactureID": 49,
+      "surname": "Jonathan",
+      "firstName": "Phillips",
+      "age": 53,
+      "country": "Germany"
+    },
+    "price": 877.0,
+    "date": 1928
+  },
+  {
+    "id": 26,
+    "name": "MagnetSet 2",
+    "manufacturer": {
+      "manufactureID": 48,
+      "surname": "Mia",
+      "firstName": "Allen",
+      "age": 19,
+      "country": "Norway"
+    },
+    "price": 729.0,
+    "date": 1925
+  },
+  {
+    "id": 27,
+    "name": "WallPoster 5",
+    "manufacturer": {
+      "manufactureID": 27,
+      "surname": "Sophia",
+      "firstName": "Moore",
+      "age": 39,
+      "country": "Spain"
+    },
+    "price": 1142.0,
+    "date": 1970
+  },
+  {
+    "id": 28,
+    "name": "MiniEasel 4",
+    "manufacturer": {
+      "manufactureID": 49,
+      "surname": "Jonathan",
+      "firstName": "Phillips",
+      "age": 53,
+      "country": "Germany"
+    },
+    "price": 1092.0,
+    "date": 1904
+  },
+  {
+    "id": 29,
+    "name": "ShotGlass 1",
+    "manufacturer": {
+      "manufactureID": 29,
+      "surname": "Andrew",
+      "firstName": "Baker",
+      "age": 26,
+      "country": "Spain"
+    },
+    "price": 714.0,
+    "date": 1901
+  },
+  {
+    "id": 30,
+    "name": "WoodenBox 4",
+    "manufacturer": {
+      "manufactureID": 30,
+      "surname": "Henry",
+      "firstName": "King",
+      "age": 38,
+      "country": "Germany"
+    },
+    "price": 1450.0,
+    "date": 2015
+  },
+  {
+    "id": 31,
+    "name": "GiftBox 5",
+    "manufacturer": {
+      "manufactureID": 39,
+      "surname": "Daniel",
+      "firstName": "Jackson",
+      "age": 49,
+      "country": "Brazil"
+    },
+    "price": 1159.0,
+    "date": 1978
+  },
+  {
+    "id": 32,
+    "name": "ArtCalendar 4",
+    "manufacturer": {
+      "manufactureID": 43,
+      "surname": "Joseph",
+      "firstName": "Lewis",
+      "age": 44,
+      "country": "China"
+    },
+    "price": 1163.0,
+    "date": 1904
+  },
+  {
+    "id": 33,
+    "name": "ShotGlass 4",
+    "manufacturer": {
+      "manufactureID": 33,
+      "surname": "James",
+      "firstName": "Anderson",
+      "age": 33,
+      "country": "Netherlands"
+    },
+    "price": 995.0,
+    "date": 1979
+  },
+  {
+    "id": 34,
+    "name": "HandmadeSoap 1",
+    "manufacturer": {
+      "manufactureID": 34,
+      "surname": "Olivia",
+      "firstName": "Taylor",
+      "age": 60,
+      "country": "Germany"
+    },
+    "price": 1379.0,
+    "date": 1937
+  },
+  {
+    "id": 35,
+    "name": "Pen 3",
+    "manufacturer": {
+      "manufactureID": 35,
+      "surname": "Emily",
+      "firstName": "Johnson",
+      "age": 48,
+      "country": "France"
+    },
+    "price": 1454.0,
+    "date": 1946
+  },
+  {
+    "id": 36,
+    "name": "Pen 4",
+    "manufacturer": {
+      "manufactureID": 42,
+      "surname": "Natalie",
+      "firstName": "Turner",
+      "age": 23,
+      "country": "Norway"
+    },
+    "price": 1228.0,
+    "date": 2000
+  },
+  {
+    "id": 37,
+    "name": "GlassFigurine 5",
+    "manufacturer": {
+      "manufactureID": 49,
+      "surname": "Jonathan",
+      "firstName": "Phillips",
+      "age": 53,
+      "country": "Germany"
+    },
+    "price": 1342.0,
+    "date": 1989
+  },
+  {
+    "id": 38,
+    "name": "DeskFlag 3",
+    "manufacturer": {
+      "manufactureID": 38,
+      "surname": "William",
+      "firstName": "Harris",
+      "age": 51,
+      "country": "New Zealand"
+    },
+    "price": 810.0,
+    "date": 1955
+  },
+  {
+    "id": 39,
+    "name": "TotePouch 3",
+    "manufacturer": {
+      "manufactureID": 39,
+      "surname": "Daniel",
+      "firstName": "Jackson",
+      "age": 49,
+      "country": "Brazil"
+    },
+    "price": 1663.0,
+    "date": 1919
+  },
+  {
+    "id": 40,
+    "name": "GreetingCard 3",
+    "manufacturer": {
+      "manufactureID": 40,
+      "surname": "Lily",
+      "firstName": "Scott",
+      "age": 31,
+      "country": "Netherlands"
+    },
+    "price": 874.0,
+    "date": 1917
+  },
+  {
+    "id": 41,
+    "name": "CrystalKeychain 4",
+    "manufacturer": {
+      "manufactureID": 49,
+      "surname": "Jonathan",
+      "firstName": "Phillips",
+      "age": 53,
+      "country": "Germany"
+    },
+    "price": 1147.0,
+    "date": 1978
+  },
+  {
+    "id": 42,
+    "name": "SouvenirPlate 4",
+    "manufacturer": {
+      "manufactureID": 42,
+      "surname": "Natalie",
+      "firstName": "Turner",
+      "age": 23,
+      "country": "Norway"
+    },
+    "price": 1355.0,
+    "date": 1950
+  },
+  {
+    "id": 43,
+    "name": "TravelNotebook 5",
+    "manufacturer": {
+      "manufactureID": 43,
+      "surname": "Joseph",
+      "firstName": "Lewis",
+      "age": 44,
+      "country": "China"
+    },
+    "price": 798.0,
+    "date": 2011
+  },
+  {
+    "id": 44,
+    "name": "WallArt 1",
+    "manufacturer": {
+      "manufactureID": 44,
+      "surname": "John",
+      "firstName": "Carter",
+      "age": 52,
+      "country": "Netherlands"
+    },
+    "price": 1241.0,
+    "date": 1962
+  },
+  {
+    "id": 45,
+    "name": "Towel 2",
+    "manufacturer": {
+      "manufactureID": 45,
+      "surname": "Charles",
+      "firstName": "Hall",
+      "age": 44,
+      "country": "Norway"
+    },
+    "price": 544.0,
+    "date": 1909
+  },
+  {
+    "id": 46,
+    "name": "Bracelet 4",
+    "manufacturer": {
+      "manufactureID": 47,
+      "surname": "Ava",
+      "firstName": "Young",
+      "age": 29,
+      "country": "China"
+    },
+    "price": 202.0,
+    "date": 2007
+  },
+  {
+    "id": 47,
+    "name": "Ornament 1",
+    "manufacturer": {
+      "manufactureID": 47,
+      "surname": "Ava",
+      "firstName": "Young",
+      "age": 29,
+      "country": "China"
+    },
+    "price": 27.0,
+    "date": 1968
+  },
+  {
+    "id": 48,
+    "name": "CityCoin 3",
+    "manufacturer": {
+      "manufactureID": 48,
+      "surname": "Mia",
+      "firstName": "Allen",
+      "age": 19,
+      "country": "Norway"
+    },
+    "price": 512.0,
+    "date": 1939
+  },
+  {
+    "id": 49,
+    "name": "CrystalKeychain 1",
+    "manufacturer": {
+      "manufactureID": 49,
+      "surname": "Jonathan",
+      "firstName": "Phillips",
+      "age": 53,
+      "country": "Germany"
+    },
+    "price": 1488.0,
+    "date": 2024
+  },
+  {
+    "id": 50,
+    "name": "PostcardSet 5",
+    "manufacturer": {
+      "manufactureID": 50,
+      "surname": "David",
+      "firstName": "Wilson",
+      "age": 41,
+      "country": "Canada"
+    },
+    "price": 1207.0,
+    "date": 1975
+  }
+]

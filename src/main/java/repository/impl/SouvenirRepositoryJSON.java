@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 
 public class SouvenirRepositoryJSON implements SouvenirRepository {
@@ -32,8 +33,15 @@ public class SouvenirRepositoryJSON implements SouvenirRepository {
     }
 
     private static List<Souvenir> initRepository() {
-        List<Souvenir> souvenir = TestDataGenerator.generateRandomSouvenir(50);
-        List<Souvenir> localLibrary = new ArrayList<>(souvenir);
+        List<Souvenir> souvenirs = TestDataGenerator.generateRandomSouvenir(50);
+        List<Souvenir> localLibrary = new ArrayList<>(); ;
+        IntStream.range(0, souvenirs.size())
+                .forEach(index -> {
+                    Souvenir souvenir = souvenirs.get(index);
+                    souvenir.setId(index + 1);
+                    souvenir.getManufacturer().setManufactureID(index + 1);
+                    localLibrary.add(souvenir);
+                });
         return localLibrary;
     }
 
