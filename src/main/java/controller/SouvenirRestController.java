@@ -32,7 +32,7 @@ public class SouvenirRestController {
         return souvenirsService.getSouvenirs();
     }
 
-    // READ by ID
+
     @GetMapping(value = "/{id}", produces = {"application/json"})
     public ResponseEntity<Souvenir> getBookById(@PathVariable Integer id) {
         Souvenir byId = souvenirsService.getSouvenirs().get(id);
@@ -40,14 +40,14 @@ public class SouvenirRestController {
                ResponseEntity.notFound().build();
     }
 
-    // CREATE
+
     @PostMapping
     public ResponseEntity<Souvenir> createSouvenir(@RequestBody Souvenir souvenir) {
         souvenirsService.addSouvenir(souvenir);
         return ResponseEntity.status(HttpStatus.CREATED).body(souvenir);
     }
 
-    // CREATE WITH VALIDATION
+
     @PostMapping("/validation")
     public ResponseEntity<String> createSouvenirWithValidation(@RequestBody String rawJson) throws JsonProcessingException {
         // 1. Валидация по JSON Schema
@@ -57,7 +57,7 @@ public class SouvenirRestController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }
 
-        // 2. Десериализация в DTO
+
         SouvenirFromDTO souvenirFromDTO;
         try {
             souvenirFromDTO = mapper.readValue(rawJson, SouvenirFromDTO.class);
@@ -70,14 +70,6 @@ public class SouvenirRestController {
         return ResponseEntity.status(HttpStatus.CREATED).body(mapper.writeValueAsString(souvenirFromDTO));
     }
 
-    // UPDATE //
-    //    @PutMapping("/{id}")
-    //    public ResponseEntity<Book> updateBook(@PathVariable Long id, @RequestBody Book bookDetails) {
-    //        Book updatedBook = bookService.updateBook(id, bookDetails);
-    //        return ResponseEntity.ok(updatedBook);
-    //    }
-
-    // DELETE
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteSouvenir(@PathVariable Integer id) {
         souvenirsService.getSouvenirs().remove(id);
