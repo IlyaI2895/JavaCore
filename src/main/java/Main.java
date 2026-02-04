@@ -1,5 +1,3 @@
-package Utill;
-
 import controller.MainController;
 
 public class Main {
